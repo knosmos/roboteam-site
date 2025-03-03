@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MIT Robotics Team</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </head>
+    <body>
+        <div class="splash">
+            <img src="assets/logo.png" alt="MIT Robotics Team" id="logo">
+            <h1 id="header">DESIGN. BUILD. <span style="color: var(--color-primary)">REPEAT.</span></h1>
+            <div id="nav">
+                <a href="#about">[about]</a>
+                <a href="#projects">[projects]</a>
+                <a href="#sponsors">[sponsors]</a>
+                <a href="#members">[members]</a>
+                <a>[donate]</a>
+            </div>
+        </div>
+        <hr>
+        <div class="main">
+            <h1 id="about">abstract.</h1>
+            <p class="subtitle">MIT's premier competitive robotics team.</p>
+            <p>
+                We're a diverse group of undergraduate students with a common passion for robotics. We aim to explore exciting new technologies, learn critical skills, and promote the field of robotics through entering a variety of competitions and engaging in outreach events in the wider community. We're always looking for dedicated people to work on exciting problems. <a>Join us!</a>
+            </p>
+            <hr>
+            <h1 id="projects">projects.</h1>
+            <p class="subtitle">RoboTeam tends to compete in a new competition every 1-2 years. Here are some things we've done and some things yet to come.</p>
+            <div class="card-list">
+                <div class="card">
+                    <div class="card-side">
+                        <h2>NASA Lunabotics</h2>
+                        <p>
+                            Lorem ipsum (/ˌlɔː.rəm ˈɪp.səm/ LOR-əm IP-səm) is a dummy or placeholder text commonly used in graphic design, publishing, and web development to fill empty spaces in a layout that does not yet have content.
+                        </p>
+                    </div>
+                    <img src="assets/ssl.png" alt="SSL">
+                </div>
+                <div class="card">
+                    <img src="assets/ssl.png" alt="SSL">
+                    <div class="card-side">
+                        <h2>IEEE ICRA Quadruped Challenge</h2>
+                        <p>
+                            Lorem ipsum (/ˌlɔː.rəm ˈɪp.səm/ LOR-əm IP-səm) is a dummy or placeholder text commonly used in graphic design, publishing, and web development to fill empty spaces in a layout that does not yet have content.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-side">
+                        <h2>Robocup SSL</h2>
+                        <p>
+                            RoboCup Small Size League (SSL) pits two teams of autonomous robots against each other in a heated soccer match. Objects on the field are tracked by a standardized vision system that processes the data provided by four cameras.
+                        </p>
+                    </div>
+                    <img src="assets/ssl.png" alt="SSL">
+                </div>
+                <div class="card">
+                    <img src="assets/rescue.png" alt="SSL">
+                    <div class="card-side">
+                        <h2>Robocup Rescue</h2>
+                        <p>
+                            Robocup Rescue focuses on the development of robots for search and rescue scenarios. Robots are evaluated using objective criteria as they undergo challenges in varying environments.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-side">
+                        <h2>Pac-Bot</h2>
+                        <p>
+                            Hosted by the HURC, this competition challenges competitor robots to play the classic game of Pac-Man in a real-life maze. The PacBot must autonomously navigate the arena, plot its trajectory and that of the ghosts, and strategically collect points.
+                        </p>
+                    </div>
+                    <img src="assets/pacbot.png" alt="SSL">
+                </div>
+            </div>
+            <hr>
+            <h1 id="sponsors">sponsors.</h1>
+            <p class="subtitle">Your support makes MIT RoboTeam possible.</p>
+            <div class="sponsor-grid">
+                <img src="assets/aptiv.png" alt="Aptiv" class="sponsor">
+                <img src="assets/maxon.png" alt="Maxon" class="sponsor">
+                <img src="assets/edgerton.png" alt="Edgerton Center" class="sponsor">
+                <img src="assets/gm.png" alt="General Motors" class="sponsor">
+            </div>
+            <hr>
+            <h1 id="members">members.</h1>
+            <p class="subtitle">Meet the team.</p>
+            <div class="member-grid">
+                <div class="member">
+                    <img src="assets/placeholder.jpg" alt="Placeholder" class="member-image">
+                    <h2>John Doe</h2>
+                    <p>President</p>
+                </div>
+                <div class="member">
+                    <img src="assets/placeholder.jpg" alt="Placeholder" class="member-image">
+                    <h2>Jane Doe</h2>
+                    <p>Vice President</p>
+                </div>
+                <div class="member">
+                    <img src="assets/placeholder.jpg" alt="Placeholder" class="member-image">
+                    <h2>John Smith</h2>
+                    <p>Secretary</p>
+                </div>
+                <div class="member">
+                    <img src="assets/placeholder.jpg" alt="Placeholder" class="member-image">
+                    <h2>Jane Smith</h2>
+                    <p>Treasurer</p>
+                </div>
+            </div>
+            <footer>
+                <br>
+                <img src="assets/logo.png" alt="MIT Robotics Team" id="footer-logo" style="width: 200px;">
+                <br><br>
+            </footer>
+        </div>
+        <script>
+            for (let item of document.querySelectorAll("p, h1, h2, h3, h4, h5, h6, a, img")) {
+                item.setAttribute("data-aos", "zoom-in");
+                item.setAttribute("data-aos-duration", "200");
+                item.setAttribute("data-aos-anchor-placement", "center-bottom");
+            }
+            for (let item of document.querySelectorAll(".splash > *")) {
+                item.setAttribute("data-aos", "zoom-out");
+                item.setAttribute("data-aos-duration", "1000");
+            }
+            AOS.init();
+        </script>
+    </body>
+</html>
