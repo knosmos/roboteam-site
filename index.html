@@ -7,8 +7,10 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <link rel="icon" href="assets/icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <div id="coverall"></div>
         <div class="splash">
             <img src="assets/logo.png" alt="MIT Robotics Team" id="logo">
             <h1 id="header">DESIGN. BUILD. <span style="color: var(--color-primary)">REPEAT.</span></h1>
@@ -128,6 +130,12 @@
                 item.setAttribute("data-aos-duration", "1000");
             }
             AOS.init();
+
+            // set opacity to scroll position
+            window.addEventListener("scroll", () => {
+                let opacity = Math.min(1, window.scrollY / 200);
+                document.getElementById("coverall").style.opacity = opacity;
+            });
         </script>
     </body>
 </html>

@@ -56,6 +56,35 @@ body {
     text-decoration: none;
     color: var(--color-primary);
     font-size: 20pt;
+    transition: 0.2s all;
+    bottom: 0px;
+    position: relative;
+}
+
+#nav a:hover {
+    bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    #logo {
+        width: 80%;
+    }
+    .splash {
+        padding: 20px;
+        display: block;
+        height: auto;
+    }
+    #header {
+        text-align: left;
+        font-size: 40pt;
+    }
+    #nav {
+        display: block;
+    }
+    #nav a {
+        display: block;
+        margin: 10px;
+    }
 }
 
 h1 {
@@ -76,7 +105,7 @@ p {
 
 .card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -130,4 +159,17 @@ p {
     border: 1px solid var(--color-primary);
     box-shadow: 10px 10px 30px #c6cacf;
     border-radius: 10px;
+}
+
+#coverall {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-tertiary);
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    opacity: 0;
 }
