@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MIT Robotics Team</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="icon" href="assets/icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg fixed-top nav-pills">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/icon.png" style="width: 40px; filter:invert(1) brightness(10)"><span id="psr_title2">&emsp;|&emsp;MIT Autonomous</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-4 mb-lg-0 nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#sponsors">Sponsors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="members.html">Members</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main" style="padding-top: 100px;">
+            <h1 id="projects">projects</h1>
+            <p class="subtitle">MIT Autonomous tends to compete in a new competition every 1-2 years. Here are some things we've done and some things yet to come.</p>
+            <div class="proj-card-list">
+                <div class="proj-card">
+                    <div class="proj-card-side">
+                        <h2>NASA Lunabotics</h2>
+                        <p>
+                            Lorem ipsum (/ˌlɔː.rəm ˈɪp.səm/ LOR-əm IP-səm) is a dummy or placeholder text commonly used in graphic design, publishing, and web development to fill empty spaces in a layout that does not yet have content.
+                        </p>
+                    </div>
+                    <img src="assets/ssl.png" alt="SSL">
+                </div>
+                <div class="proj-card">
+                    <img src="assets/ssl.png" alt="SSL">
+                    <div class="proj-card-side">
+                        <h2>IEEE ICRA Quadruped Challenge</h2>
+                        <p>
+                            Lorem ipsum (/ˌlɔː.rəm ˈɪp.səm/ LOR-əm IP-səm) is a dummy or placeholder text commonly used in graphic design, publishing, and web development to fill empty spaces in a layout that does not yet have content.
+                        </p>
+                    </div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-card-side">
+                        <h2>Robocup SSL</h2>
+                        <p>
+                            RoboCup Small Size League (SSL) pits two teams of autonomous robots against each other in a heated soccer match. Objects on the field are tracked by a standardized vision system that processes the data provided by four cameras.
+                        </p>
+                    </div>
+                    <img src="assets/ssl.png" alt="SSL">
+                </div>
+                <div class="proj-card">
+                    <img src="assets/rescue.png" alt="SSL">
+                    <div class="proj-card-side">
+                        <h2>Robocup Rescue</h2>
+                        <p>
+                            Robocup Rescue focuses on the development of robots for search and rescue scenarios. Robots are evaluated using objective criteria as they undergo challenges in varying environments.
+                        </p>
+                    </div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-card-side">
+                        <h2>Pac-Bot</h2>
+                        <p>
+                            Hosted by the HURC, this competition challenges competitor robots to play the classic game of Pac-Man in a real-life maze. The PacBot must autonomously navigate the arena, plot its trajectory and that of the ghosts, and strategically collect points.
+                        </p>
+                    </div>
+                    <img src="assets/pacbot.png" alt="SSL">
+                </div>
+            </div>
+            <footer>
+                <br>
+                <img src="assets/logo2.png" alt="MIT Robotics Team" id="footer-logo" style="width: 200px;">
+                <br><br>
+            </footer>
+        </div>
+        <script>
+            for (let item of document.querySelectorAll("p, h1, h2, h3, h4, h5, h6, a, img")) {
+                item.setAttribute("data-aos", "zoom-in");
+                item.setAttribute("data-aos-duration", "200");
+                item.setAttribute("data-aos-anchor-placement", "center-bottom");
+            }
+            for (let item of document.querySelectorAll(".splash > *")) {
+                item.setAttribute("data-aos", "zoom-out");
+                item.setAttribute("data-aos-duration", "1000");
+            }
+            AOS.init();
+
+            // set opacity to scroll position
+            window.addEventListener("scroll", () => {
+                let opacity = Math.min(1, window.scrollY / 200);
+                document.getElementById("coverall").style.opacity = opacity;
+            });
+        </script>
+    </body>
+</html>
